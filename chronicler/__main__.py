@@ -1,0 +1,3 @@
+import chronicler
+
+chronicler.main()

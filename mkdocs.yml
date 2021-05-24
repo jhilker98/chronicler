@@ -1,0 +1,8 @@
+site_name: Chronicler for CK3
+site_author: Jacob Hilker
+repo_url: https://gitlab.com/jhilker/chroniclerCK3/
+edit_uri: blob/main/docs
+nav:
+  - Home: index.md
+
+theme: readthedocs
