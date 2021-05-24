@@ -1,0 +1,10 @@
+@page {
+    size: a4 portrait;
+    counter-increment: page;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: pre;
+    color: grey;
+    @top-right-corner {
+        content: none;
+    }
+}
