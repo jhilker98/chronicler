@@ -59,7 +59,14 @@ def parse_config(app, config_file=os.path.expanduser("~/.config/chronicler/confi
     with open(config_file, 'r') as config_file:
         config = yaml.safe_load(config_file)
         keys = config.keys()
-        #try:
+       
+        
+        #print(keys)
+        for key in keys:
+            try:
+                print(key) 
+            except:
+                pass
         #TODO get config parsing working
             
 def main():
