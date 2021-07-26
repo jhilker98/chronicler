@@ -6,7 +6,7 @@ with open('requirements.txt', 'r') as req_fp:
     required_packages = req_fp.readlines()
 
 # Use README for long description
-with open('README.md', 'r') as readme_fp:
+with open('README.org', 'r') as readme_fp:
     long_description = readme_fp.read()
 
 setup(
@@ -19,7 +19,7 @@ setup(
     keywords="",
     url="https://github.com/jhilker1/chronicler",
     long_description=long_description,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/x-org',
     packages = find_packages(exclude=['tests', 'docs']),
     extras_require={
         'test': ['pytest'],
