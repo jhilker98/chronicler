@@ -1,3 +1,4 @@
+#+attr_html: :width 200px
 [[file:assets/logo_title.png]]
 
 #+title: Chronicler
