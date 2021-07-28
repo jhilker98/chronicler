@@ -1,8 +1,9 @@
+#+title: Chronicler
+
 #+attr_html: :width 200px
 [[file:assets/logo-gen-title.png]]
 
 
-# #+title: Chronicler
 
 #+html: <a href='https://chronicler.readthedocs.io/en/latest/?badge=latest'><img src='https://readthedocs.org/projects/chronicler/badge/?version=latest&style=flat-square' alt='Documentation Status' /></a> 
 #+html: <a href="https://discord.com/invite/SewRkyur3Q"><img alt="Discord" src="https://img.shields.io/discord/823598624574406678?color=%235865F2&label=Discord&logo=discord&logoColor=white&style=flat-square"></a>
