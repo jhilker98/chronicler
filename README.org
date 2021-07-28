@@ -1,5 +1,5 @@
-# #+attr_html: :width 200px
-# [[file:assets/logo_title.png]]
+#+attr_html: :width 200px
+[[file:assets/logo_title.png]]
 
 #+title: Chronicler
 
@@ -9,5 +9,5 @@
 Chronicler is a terminal application for managing after-action reports (AARs) for Paradox games, such as Crusader Kings 3.
 
 
-* Contributing
+** Contributing
 If you are interested in contributing in any way to the application's codebase, please submit a pull request. If you are interested in contributing to the documentation of the project, please send a message on the [[(https://discord.gg/SewRkyur3Q)][Discord]]. Feel free to also join the [[][Gitter chat]].
