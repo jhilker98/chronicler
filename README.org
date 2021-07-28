@@ -1,12 +1,12 @@
 #+attr_html: :width 200px
 [[file:assets/logo_title.png]]
 
-#+title: Chronicler
+# #+title: Chronicler
 
 #+html: <a href="https://discord.com/invite/SewRkyur3Q"><img alt="Discord" src="https://img.shields.io/discord/823598624574406678?color=%235865F2&label=Discord&logo=discord&logoColor=white&style=flat-square"></a>
 
 #+html: <img src="assets/logo-150.png" align="right">
-Chronicler is a terminal application for managing after-action reports (AARs) for Paradox games, such as Crusader Kings 3.
+Chronicler is a terminal application for managing after-action reports (AARs) for Paradox games, such as Crusader Kings 3, Imperator: Rome, or Stellaris.
 
 
 ** Contributing
