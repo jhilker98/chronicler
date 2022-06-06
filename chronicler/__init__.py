@@ -4,7 +4,7 @@
 import py_cui as pycui
 import argparse
 import yaml
-import os
+from pathlib import Path
 _version_ = 'v0.0.1'
 
 class ChroniclerApp:
@@ -43,7 +43,7 @@ class ChroniclerApp:
         """
         self.screen.start()
 
-def parse_config(app, config_file=os.path.expanduser("~/.config/chronicler/config.yml")):
+def parse_config(app, config_file=Path("~/.config/chronicler/config.yml").expanduser()):
     """
     Used to parse the config file.
 

@@ -1,1 +1,2 @@
-py_cui
+py-cui==0.1.4
+PyYAML==6.0
