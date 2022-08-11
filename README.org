@@ -1,5 +1,3 @@
 #+title: Chronicler
 
-
-
 Chronicler is a terminal application for managing after-action reports (AARs) for Paradox games, such as Crusader Kings 3.

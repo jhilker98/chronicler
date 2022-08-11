@@ -5,7 +5,7 @@ import py_cui as pycui
 import argparse
 import yaml
 from pathlib import Path
-_version_ = 'v0.0.1'
+_version_ = 'v0.0.1-alpha'
 
 class ChroniclerApp:
     """
@@ -25,15 +25,13 @@ class ChroniclerApp:
             screen (py_cui.PyCUI): The screen the app will be rendered on.
         """
         self.screen = screen
-        self.character_list = self.screen.add_scroll_menu('Characters', 0, 0, row_span = 8, column_span = 3, pady = -1)
-        self.character_war_info = self.screen.add_block_label('', 0, 3, row_span = 8, column_span = 5, pady = -1, center=False)
-        self.widgets = {'character_list': self.character_list, 'character_info': self.character_war_info, 'title_bar': self.screen.title_bar, 'status_bar': self.screen.status_bar}
+        self.character_list = self.screen.add_scroll_menu('Characters', 0, 0, row_span = 8, column_span = 3)
+        self.character_war_info = self.screen.add_block_label('', 0, 3, row_span = 8, column_span = 5, center=False)
+        self.character_war_info.toggle_border()
+        self.widgets = {'character_list': self.character_list,'character_info': self.character_war_info, 'title_bar': self.screen.title_bar, 'status_bar': self.screen.status_bar}
         self.screen.set_status_bar_text(' q: Quit Chronicler |  o: Open AAR | H: Print Keybindings') 
 
-    #def show_help_menu(self):
-    #    keys = ['H: Toggle Help Menu', 'q: Quit Chronicler']
-    #    self.screen.show_message_popup('Keybindings','H: Toggle Help Menu     q: Quit Chronicler     o: Open AAR     a: Add Item     s: Save AAR')
-    
+
     
     def run(self):
         """
@@ -59,8 +57,6 @@ def parse_config(app, config_file=Path("~/.config/chronicler/config.yml").expand
     with open(config_file, 'r') as config_file:
         config = yaml.safe_load(config_file)
         keys = config.keys()
-       
-        
         #print(keys)
         for key in keys:
             try:
@@ -76,15 +72,8 @@ def main():
     This function is executed when you run `chronicler` at the command line. It sets up the UI, parses the config, and then runs the application.
     """
     root = pycui.PyCUI(8, 8)
-    root.set_title('Chronicler for Crusader Kings 3')
+    root.set_title('Chronicler')
     app =  ChroniclerApp(root)
-    #root.add_key_command(pycui.keys.KEY_H_UPPER, app.show_help_menu)
     parser = argparse.ArgumentParser(description='A tool for managing after-action reports for Crusader Kings 3.')
-    parser.add_argument('-c', '--config', help='Path to another config file.', action='store', dest='cfg', nargs='?', const="~/.config/chronicler/chronicler.yml")
     args = vars(parser.parse_args())
-    #print(args)
-    if (args['cfg'] == None):
-        parse_config(app)
-    else:
-        parse_config(app, args['cfg'])    
-    #app.run()
+    app.run()
