@@ -1,15 +1,39 @@
 site_name: Chronicler
 site_author: Jacob Hilker
-
+repo_url: https://github.com/jhilker1/chronicler/
+edit_uri: ""
 nav:
   - Home: index.md
 
+  - License: license.md
+
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/git-alt
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        #icon: material/weather-night
+        icon: material/moon-waxing-crescent
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+      primary: light blue
+      accent: amber
+
+
 
 plugins:
-- social
+- search
 - mkdocstrings:
     handlers:
       python:
         paths: [chronicler]  # search packages in the chronicler folder
+- social
