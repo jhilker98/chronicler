@@ -1,2 +1,9 @@
 py-cui==0.1.4
 PyYAML==6.0
+mkdocs-material==8.5.3
+mkdocstrings[python]==0.18.0
+mkdocs-exclude==1.0.2
+#Markdown==3.2.2
+#mkdocs-techdocs-core==0.0.13
+#mkdocs-macros-plugin==0.4.20
+#mkdocs==1.1.2

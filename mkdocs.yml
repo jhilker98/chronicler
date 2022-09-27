@@ -1,49 +1,15 @@
-site_name: Chronicler for CK3
+site_name: Chronicler
 site_author: Jacob Hilker
-repo_url: https://gitlab.com/jhilker/chroniclerCK3/
-edit_uri: blob/main/docs
+
 nav:
   - Home: index.md
-  - Installation: install.md
-  - Configuration: config.md
-  - Usage: usage.md
-  - Contribute: contribute.md
-  - API Reference:
-      - Chronicler: api/chronicler.md
-      - Assets: api/assets.md
-      - AAR File Type: api/aar.md
 
 theme:
-  name: "material"
-  palette: 
-    scheme: slate
-    primary: light blue
-    accent: amber
+  name: material
 
 plugins:
-- search
-#- pdf-export:
-#    combined: true
-#    combined_output_path: "docs.pdf"
-- with-pdf:
-   cover_subtitle: ""
-   toc_title: "Table of Contents"
-   output_path: "docs.pdf"
-   copyright: "&copy; 2021 Jacob Hilker"  
-   custom_template_path: "docs/templates"
-
-- exclude:
-      glob: 
-        - "scripts/*"
+- social
 - mkdocstrings:
-    default_handler: python
     handlers:
       python:
-        rendering:
-          show_source: true
-    custom_templates: templates
-    watch:
-      - chronicler
-extra:
-  version:
-    provider: mike
+        paths: [chronicler]  # search packages in the chronicler folder

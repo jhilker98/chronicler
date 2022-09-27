@@ -29,7 +29,7 @@ class ChroniclerApp:
         self.character_war_info = self.screen.add_block_label('', 0, 3, row_span = 8, column_span = 5, center=False)
         self.character_war_info.toggle_border()
         self.widgets = {'character_list': self.character_list,'character_info': self.character_war_info, 'title_bar': self.screen.title_bar, 'status_bar': self.screen.status_bar}
-        self.screen.set_status_bar_text(' q: Quit Chronicler |  o: Open AAR | H: Print Keybindings') 
+        self.screen.set_status_bar_text(' q: Quit Chronicler |  o: Open Project | H: Print Keybindings')
 
 
     
